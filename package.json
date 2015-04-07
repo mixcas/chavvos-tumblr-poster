@@ -1,0 +1,16 @@
+{
+  "name": "chavvos-tumblr-poster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^1.0.0-rc5",
+    "tumblr": "^0.4.1",
+    "tumblr.js": "0.0.4"
+  }
+}
