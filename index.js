@@ -1,7 +1,11 @@
+var dotenv = require('dotenv');
 var tumblr = require('tumblr.js');
 var imgur = require('imgur');
 var chokidar = require('chokidar');
 var fs = require('fs');
+
+// Load env vars via Dotenv
+dotenv.load();
 
 // SET UP SOME VARIABLES FROM THE EN
 var tumblrOAuth = {
@@ -11,6 +15,7 @@ var tumblrOAuth = {
   token_secret: process.env.TOKEN_SECRET,
 };
 var blogName = process.env.BLOG;
+console.log(blogName);
 
 // CONNECT TO TUMBLR
 var blog = tumblr.createClient(tumblrOAuth);
